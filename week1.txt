@@ -1,0 +1,449 @@
+section 1
+Q 1. Expand Bash.
+ans =The Bash shell provides some variables that are prefixed with '~' (named tilde) which is called Tilde Expansions
+.
+Q 2. Explain all types of Shell Expansion.
+ans   Pathname Expansion
+      The mechanism by which wildcards work is called pathname expansion. If we try some of the techniques that we employed in our earlier lessons, we will see that they are really expansions.
+
+2.  Tilde Expansion
+    As you may recall from our introduction to the cd command, the tilde character (“~”) has a special meaning. When used at the beginning of a word, it expands into the name of the home directory of the named user, or if no user is named, the home directory of the current user
+
+3 Arithmetic Expansion
+   The shell allows arithmetic to be performed by expansion. This allow us to use the shell prompt as a calculator:
+
+4 Brace Expansion
+   Perhaps the strangest expansion is called brace expansion. With it, you can create multiple text strings from a pattern containing braces
+
+5  Parameter Expansion
+
+We're only going to touch briefly on parameter expansion in this lesson, but we'll be covering it more later. It's a feature that is more useful in shell scripts than directly on the command line. Many of its capabilities have to do with the system's ability to store small chunks of data and to give each chunk a name. Many such chunks, more properly called variables, are available for your examination
+
+ Q3  what is the usage of the man command?
+ANS  man command in Linux is used to display the user manual of any command that we can run on the terminal. It provides a detailed view of the command which includes NAME
+
+ Q 4. Write a command to display the current working directory.
+  ANS   PWD 
+
+5. Write a command to change the directory path to a certain directory.
+ans  cd. command 
+
+6. Write a command to get into the home directory.
+  ans. cd 
+7. Write a command to get into the parent directory.
+ans. cd  dir 
+8. Write a command to go to the previous directory.
+ans cd .. cd/
+
+9. Define the absolute path.
+ans. An absolute path is defined as specifying the location of a file or directory from the root directory(/). In other words,we can say that an absolute path is a complete path from start of actual file system from /      directory
+
+10. Define the relative path.
+Relative path is defined as the path related to the present working directly(pwd).
+
+11. Write command to make a directory.
+ans   mkdir shub
+
+12. Write command to remove a directory.
+ans  rmdir  shub
+
+13. Write command to remove the empty directory.
+ans 	rmdir 
+
+14. Write a command to remove all the files and sub-directories present in the directory.
+ans rm -rfv
+
+15. Write the usage of the pushd command.
+ans pushd command – puts/adds directory paths onto a directory stack (history) and later allowing you to navigate back to any directory in history. While you add directories to the stack, it also echoes what’s existing in history (or “stack”).
+
+16. Write the usage of the popd command.
+ans  popd command – removes a directory from the top of the stack or history. To list the directory stack, type:
+
+17. Write a command to list all the files in the current directory
+ans The ls command lists files in the current working directory. To move a file from one directory to another, use mv. The use of the mv command changes the name of the file from oldname to newname.
+
+18. Write command to know the type of any given file.
+ans  file
+
+19. Write about the magic file in the Unix file system.
+
+ans The file command uses the /etc/magic file in its attempt to identify the type of a binary file. Essentially, /etc/magic contains templates that show what different types of files look like. The magic file contains lines that describe magic numbers, which identify particular types of files.
+
+20. Write the usage of file command for the special files as a parameter.
+The file Command. The file command attempts to classify each filesystem object (i.e., file, directory or link) that is provided to it as an argument (i.e., input). ... The first is a filesystem test, which uses the stat system call to obtain information from the object's inode (which contains information about a file)
+
+21. Write a command to create the file:  
+$ touch NewFile.txt.
+
+22. Write a command to copy the file without a change in timestamps.
+ans cp -p
+
+23. Write a command to modify the access time of a file.
+ans touch file1 file2 file3
+
+24. list all the options available for the touch command.
+ans. -a, change the access time only.
+-c, if the file does not exist, do not create it.
+-d, update the access and modification times.
+-m, change the modification time only.
+-r, use the access and modification times of file.
+-t, creates a file using a specified time.
+
+
+25. Write command to remove a file from a directory.
+ans rm and file name 
+
+26. Write about ​'rm -i​' command.
+ans  all the information are given like  how to use file  how to print etc 
+
+27. Write a command to copy the file.
+ans. cp command is use 
+
+
+28. Define about the recursive copy.
+ans  Recursive means that cp copies the contents of directories, and if a directory has subdirectories they are copied (recursively) too. ... It attempts to make a copy that's as close to the original as possible: same directory tree, same file types, same contents, same metadata (times, permissions, extended attributes, etc
+
+29. Write about the usage of head command.
+ans The head command, as the name implies, print the top N number of data of the given input. By default, it prints the first 10 lines of the specified files. If more than one file name is provided then data from each file is preceded by its file name. Let us consider two files having name state.
+
+30. Write about the usage of the tail command.
+ans The tail command is a command-line utility for outputting the last part of files given to it via standard input. It writes results to standard output. By default tail returns the last ten lines of each file that it is given. It may also be used to follow a file in real-time and watch as new lines are written to it
+
+31. Write a command to view the file content.
+ans cat  Filename.txt ni filename.txt
+
+32. Write the usage of cat command to copy the file.
+ ans  Normally you would copy a file with the cp command. You can use cat to make copies of text files in much the same way. cat sends its output to stdout (standard output), which is usually the terminal screen. However, you can redirect this output to a file using the shell redirection symbol
+
+33. Write the usage of cat command to create the file
+To create a new file, use the cat command followed by the redirection operator ( > ) and the name of the file you want to create.
+
+34. Write command to concatenate the file contents.
+ans cat $ file1 > file3 cat $file2 >> file3
+
+35. Write a command to copy files using mv command
+ans. mv filename.txt mv filename.txt filename2.txt
+
+35. Write a command to copy files using mv command
+ans mv -I
+
+36. Write command to move the files.
+ans mv example.txt -/documents/filename.txt
+
+37. Write the usage of tac command.
+ans tac command in Linux is used to concatenate and print files in reverse. This command will write each FILE to standard output, the last line first. When no file is specified then this command will read the standard input.
+
+38. Write briefly about the chmod command.
+ans  In Unix-like operating systems, the chmod command is used to change the access mode of a file.
+The name is an abbreviation of change mode.
+The operator is used to specify how the modes of a file should be adjusted. The following operators are accepted:
+The next three letters after the user’s permission are the group’s permissions.
+
+39. Write a command to change the mode a file as universal Writable/readable.
+ans 
+
+40. Write a command to change the file as executable/Writable/readable.
+ans chmod 777
+
+41. Write all the file permissions possible.
+ans Read: This permission give you the authority to open and read a file. Read permission on a directory gives you the ability to lists its content.
+       
+ Write: The write permission gives you the authority to modify the contents of a file. The write permission on a directory gives you the authority to add, remove and rename files stored in the directory. Consider a scenario where you have to write permission on file but do not have write permission on the directory where the file is stored. You will be able to modify the file contents. But you will not be able to rename, move or remove the file from the directory.
+
+Execute: In Windows, an executable program usually has an extension ".exe" and which you can easily run. In Unix/Linux, you cannot run a program unless the execute permission is set. If the execute permission is not set, you might still be able to see/modify the program code(provided read & write permissions are set), but not run it.
+ 
+
+42. Write about umask command.
+ans  In computing, umask is a command that determines the settings of a mask that controls how file permissions are set for newly created files. ... umask may also refer to a function that sets the mask, or it may refer to the mask itself, which is formally known as the file mode creation mask.
+
+43. Write the usage of 'chown' command.
+ans  The chown command is used to change the owner and group of files, directories and links. By default, the owner of a filesystem object is the user that created it. The group is a set of users that share the same access permissions (i.e., read, write and execute) for that object
+
+44. Write a command to make the files and directories to have all permissions to you and only readable to others
+ans chmod 744
+
+45. Write a command to print output in stdout and in file.
+ans ls  /path/to/file
+
+46. Write about the grep command.
+ans  grep "literal_string" filename
+
+47. Write a command to print the top and bottom n lines
+ans for print a top line command  is head  -4  /etc/passwd
+
+for print a bottom command  tail -3 /etc/services
+
+48. Write briefly about the' tr' command
+ans   The 'tr' in tr command stands for translation. This nifty command is used for translating one type of characters into another. For example, if you want to convert text into all upper cases or all lower cases, tr command is what you can use.
+
+49. Write a command to print word count in a given file.
+ans 	 cat filename.txt
+
+
+50. explain sort command usage to sort the file numeric wise
+ans  SORT command is used to sort a file, arranging the records in a particular order. By default, the sort command sorts file assuming the contents are ASCII. Using options in sort command, it can also be used to sort numerically. SORT command sorts the contents of a text file, line by line.
+
+51. Write about the sed command briefly.
+ans  SED is a powerful text stream editor. Can do insertion, deletion, search and replace(substitution). SED command in unix supports regular expression which allows it perform complex pattern matching.
+
+52. sort the file contents using PIPE
+ans cat filename | less 
+
+53. Write command to display the IP address of the host
+ans hostname -I
+
+54. Write about IP command.
+ans  IP stands for Internet Protocol. This command is used to show or manipulate routing, devices, and tunnels. It is similar to ifconfig command but it is much more powerful with more functions and facilities attached to it.
+
+55. create an alias to display your city name.
+ans cat  city.txt
+
+56. explain about 'which' command
+ans  Which command is very small and simple command to locate executables in the system. It allows user to pass several command names as arguments to get their paths in the system. “which” commands searches the path of executable in system paths set in $PATH environment variable.
+
+57. Write a command to display the exit code of the previous command. 
+ans  cd /
+
+58. execute the pwd command twice using a single command.
+
+ans pwd; pwd
+
+59. Execute a command to sleep your system for 10 seconds.
+ans  sleep NUMBER[SUFFIX]
+
+60. Write about the environmental variables.
+ans An environment variable is a dynamic "object" on a computer, containing an editable value, which may be used by one or more software programs in Windows. Environment variables help programs know what directory to install files in, where to store temporary files, and where to find user profile settings
+
+61. Write a command to display all the environmental variables in the system
+ans 
+
+62. Export a Myvar shell variable using export command.
+ans $ printname () { echo "Linuxcareer.com"; }
+ 
+63. Write a command to display all the files ending with .txt
+ ans ls *.txt
+
+64. Write about the file globbing.
+ans Globbing is the process of expanding a non-specific file name containing a wildcard character into a set of specific file names that exist in storage on a computer, server, or network. A wildcard is a symbol that can stand for one or more characters.
+
+65. Interpret the command 'echo *'
+ans  echo command in linux is used to display line of text/string that are passed as an argument . This is a built in command that is mostly used in shell scripts and batch files to output status text to the screen or a file.
+  echo -e
+
+66. Exhibit the command 'ls [a-z]*.txt'.
+ans ABC.png         ajax-php-mysql-user-interface.html
+Desktop         count
+Documents       examples.desktop
+Downloads       file2
+FileA           linux-command-past-date.png
+FileB           mno.txt
+
+67. Write a command to display the file which has alphabets in octal order.
+ans cat Sample_txt
+
+68. Write a command to display all removed duplicate columns in a file.
+ans    '!seen[$3]++' filename
+
+69. Write the usage of a find command.
+ans   Find command is used to search and locate the list of files and directories based on conditions you specify for files that match the arguments. Find can be used in a variety of conditions like you can find files by permissions, users, groups, file type, date, size, and other possible criteria. 
+
+70. Write the utility usage of date.
+ans The date utility shall write the date and time to standard output [XSI] [Option Start]  or attempt to set the system date and time. [Option End] By default, the current date and time shall be written. If an operand beginning with '+' is specified, the output format of date shall be controlled by the conversion specifications and other text in the operand.
+
+
+71. Compress the file a.txt using the gzip command.
+ans  gzip [Options] [filenames]
+
+72. Write a command to unzip the file using gunzip.
+ans gunzip  file name.txt
+
+73. Explain briefly about catzip command.
+ans. ZIP is a compression and file packaging utility for Unix. Each file is stored in single .zip {.zip-filename} file with the extension .zip.
+      zip is used to compress the files to reduce file size and also used as file package utility. zip is available in many operating systems like unix, linux, windows etc.
+If you have a limited bandwidth between two servers and want to transfer the files faster, then zip the files and transfer.
+The zip program puts one or more compressed files into a single zip archive, along with in
+
+74. Write about bzip,bunzip,bzcat commands.
+    ans. The bzip2 and bunzip2 utilities, by default, do not overwrite existing files. If you want this to happen, specify the -f option.
+               The bz2cat utility (or bzip2 -dc) decompresses all specified files to the standard output.
+              The bunzip2 utility (or bzip2 -d) decompresses and restores all specified files whose names end in .bz2". Files without this suffix are ignored. Again, specifying no files causes the decompression of data read from standard input and writes the decompressed data to standard output.
+
+
+75. explain the difference between bzip and gzip commands.
+ans It uses both the LZ77 algorithm and Huffman coding. Essentially, GZIP refers to the file format of the same name. ... GZIP is a free application used to compress files; BZIP2 is an open source lossless data compression algorithm that makes it possible to retrieve the original data of a compressed file.
+
+76. Write about the 'w' command.
+ans  The command w on many Unix-like operating systems provides a quick summary of every user logged into a computer, what each user is currently doing, and what load all the activity is imposing on the computer itself. The command is a one-command combination of several other Unix programs: who, uptime, and ps -a.
+
+77. Write about who command.
+ans 1. Time of last system boot
+       2. Current run level of the system
+     3. List of logged in users and more.
+
+78. Write about the id command.
+ans id command in Linux is used to find out user and group names and numeric ID's (UID or group ID) of the current user or any other user in the server. ... List out all the groups a user belongs to. Display security context of the current user.
+
+79. Write about the Sudo command.
+ans   The sudo command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called sudoers , which the system administrator configures.
+
+80. Write about the /etc/passwd file.
+ans The /etc/passwd is a plain text file. It contains a list of the system's accounts, giving for each account some useful information like user ID, group ID, home directory, shell, and more. The /etc/passwd file should have general read permission as many command utilities use it to map user IDs to user names
+
+81. Write a command to create a user.
+ans. sudo useradd username
+
+82. Write a command to delete the user 'user5'
+ans. userdel userName
+userdel [options] userName
+userdel -r userName
+
+83. change the user description using usermod command 
+ans  usermod  [options] username 
+
+84. Write briefly about the /etc/skel command
+ans. The /etc/skel directory contains files and directories that are automatically copied over to a new user's when it is created from useradd command. This will ensure that all the users gets same intial settings and environment.
+
+85. Write a command to change the shell of a prescribed user.
+ans.  # vi /etc/passwd
+
+86. Write a command to change your shell to the Korn shell.
+ans cat /etc/shells
+
+87. Write a command passwd command
+ans   passwd [options] [username] 
+
+88. what is the use of /etc/passwd file.
+ans. Traditionally, the /etc/passwd file is used to keep track of every registered user that has access to a system. The /etc/passwd file is a colon-separated file that contains the following information: User name. Encrypted password.
+
+89. create a user using a command useradd with OpenSSL function
+
+
+90. Write briefly about the /etc/login.defs
+ans.   The /etc/login. defs file provides default configuration information for several user account parameters. The useradd, usermod, userdel, and groupadd commands, and other user and group utilities take default values from this file. Each line consists of a directive name and associated value.
+
+
+                                    SECTION 2 
+
+1) Setup a cron job which creates a new text file every 20 seconds.Note 
+Note : a) The Text File Name should be the system TIME while executing
+b)The Text File Content should be the system DATE.
+Ans.  Command  to set the cronjob every 20 second is 
+          * * * * * sleep 20
+     Command to set the text file system Time
+        Touch "$time".txt >> folder 
+      Command to set the content of the file system  date 
+Create a file in directory and do nano to go inside the file 
+
+2) Setup a python HTTP Server which will run in the background.
+  Note : a) Python Server should run on port 80
+      b) All the server access logs should be captured in a log.txt file
+       c) Demonstrate how to terminate the above background process
+
+Ans python -m SimpleHTTPServer port number this command  to create a 
+    Pushd  /var/log; python -m SimpleHTTPServer 80; popd
+   Use bg command see  whats running  in the background 
+   Use command kill % num to terminate the background 
+
+3) Explain the difference between file soft links and hard links by creating one Demonstrate with an example file.
+ ans.  A symbolic or soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file. If you delete the original file, the soft link has no value, because it points to a non-existent file. But in the case of hard link, it is entirely opposite. Even if you delete the original file, the hard link will still has the data of the original file. Because hard link acts as a mirror copy of the original file.
+
+
+soft link 
+can cross the file system,
+allows you to link between directories,
+has different inode number and file permissions than original file,
+permissions will not be updated,
+has only the path of the original file, not the contents.
+
+A hard Link
+
+can’t cross the file system boundaries (i.e. A hardlink can only work on the same filesystem),
+can’t link directories,
+has the same inode number and permissions of original file,
+permissions will be updated if we change the permissions of source file,
+has the actual contents of original file, so that you still can view the contents, even if the original file moved or removed.
+
+example 
+mkdir test	 cd test   echo "hello"
+cat source.file
+
+4) Explain how binary system is being used with chmod command.
+  ans.  The very first column represents the type of the file i.e. is it a normal file or a
+directory where d represents a directory and – represents a normal file.
+The first set three letters after the file type tell what the Owner of the file, have permissions to do. For example: In assgn1_client.c, has owner’s permission as rw-, which means the owner mik can only read(r) and write(w) the file but cannot execute(x).
+Note: The 3rd and 4th columns represents the name of the owner of the file and the group to which the owner belongs respectively.
+The next three letters after the user’s permission are the group’s permissions.
+For example: header.sh has group permissions as r-x, which means Other people in the mik group can not write(w) the header.sh script but can only read(r) or execute(x) it.
+Note that when a directory has the x set, this takes the special meaning of “permitted to search this directory”.
+The last three letters in the permissions column tell us what the “others” may do. The general practice is to protect the files from external access so that others can’t write any files or directories. They may read(r) or execute(x) it. For example: The assgn1_client.c has others permission as r- – which means it can only be read by other(external) access but cannot be written or executed by them.
+
+
+5 What is a Zombie Process. Demonstrate usage of htop, finding zombie process and terminating them.
+
+ans   Zombie state : When a process is created in UNIX using fork() system call, the address space of the Parent process is replicated. If the parent process calls wait() system call, then the execution of parent is suspended until the child is terminated. At the termination of the child, a ‘SIGCHLD’ signal is generated which is delivered to the parent by the kernel. Parent, on receipt of ‘SIGCHLD’ reaps the status of the child from the process table. Even though, the child is terminated, there is an entry in the process table corresponding to the child where the status is stored. When parent collects the status, this entry is deleted. Thus, all the traces of the child process are removed from the system. If the parent decides not to wait for the child’s termination and it executes its subsequent task, then at the termination of the child, the exit status is not read. Hence, there remains an entry in the process table even after the termination of the child. This state of the child process is known as the Zombie state.
+
+
+
+
+
+
+
+
+             
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
