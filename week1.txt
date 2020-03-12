@@ -443,7 +443,3 @@ ans   Zombie state : When a process is created in UNIX using fork() system call,
 
 
 
-
-
-
-

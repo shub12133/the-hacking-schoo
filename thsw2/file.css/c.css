@@ -1,0 +1,36 @@
+        p.dog-name{
+ color: silver;
+}
+
+
+p#tomname{
+    color: skyblue;
+}
+
+.to{
+
+    color: slateblue;
+}
+
+.newN.oldN{
+    border: 2px dashed red;
+
+}
+
+newI.oldI{
+    background-color: rosybrown;
+
+}
+
+/* P,.bike-name{
+    color: silver;
+    } */
+  /*p span:first-child{
+      color: yellow;
+  }*/
+ /* p > spam{
+      color: yellow;
+  }*/
+  p + span{
+       color: red;
+  } 
